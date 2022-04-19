@@ -1,0 +1,48 @@
+
+
+#link1 {
+    float:left; 
+    background:rgb(93, 158, 215);
+    width:25%;
+    height:300px;
+}
+#link2 {
+    float:left; 
+    background:rgb(106, 99, 210);
+    width:50%;
+    height:300px;
+}
+#link3 {
+    float:right;
+    background:rgb(51, 51, 144);
+    width:25%;
+    height:300px; 
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    float:inline-start;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 20px;
+  height: 500px; 
+}
+
+.row:after {
+  content: "";
+  display: table;
+}
+
+.jumbotron {
+    font-family: 'Times New Roman', Times, serif;
+    
+
+}
+
