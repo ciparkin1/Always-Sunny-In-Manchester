@@ -164,3 +164,14 @@ header {
     cursor: pointer;
   }
        
+
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+        flex-direction: column; }
+    div {font-size: 20px }
+    body { background-color: var(--forgetmenot);
+    image-rendering: crisp-edges; width: auto;
+
+    }
+}
