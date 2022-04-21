@@ -1,132 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link
+        rel="stylesheet"
+        href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous"
+        />
+        <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+        rel="stylesheet"
+        />
+        <link rel="stylesheet" href="style.css" />
+        <title>Always Sunny in Manchester</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Always Sunny in Manchester</title>
-</head>
-
-<body>
-    <header>
+  <body>
+     <header>
         <section>
             <div class="links">
                 <ul style="list-style-type: none">
                     <address>
-<<<<<<< HEAD
                         <li><a href="https://www.thedailymash.co.uk/"><i class="fa-solid fa-paper-plane"></i></a></li>
                         <li><a href="https://github.com/"><i class="fa-brands fa-github"></i></a></li>
                         <li><a href="https://www.thebeaverton.com/"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"><i class="fa-brands fa-linkedin"></i></a></li>
                      </address>
-=======
-              <li>
-                <a href="https://www.thedailymash.co.uk/"
-                  ><i class="fa-solid fa-paper-plane"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://github.com/"
-                  ><i class="fa-brands fa-github"></i
-                ></a>
-              </li>
-              <li>
-                <a href="https://www.thebeaverton.com/"
-                  ><i class="fa-brands fa-instagram"></i
-                ></a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/feed/?trk=homepage-basic_google-one-tap-submit"
-                  ><i class="fa-brands fa-linkedin"></i
-                ></a>
-              </li>
-            </address>
->>>>>>> ec66f85914045101e25b24903c7e489a8f38548b
                 </ul>
             </div>
-        </section>
+            </section>
         <script src="https://kit.fontawesome.com/ea577657e8.js" crossorigin="anonymous"></script>
-
-        <marquee behavior="scroll" loop="-1" width="75%">
-            <i>
-          <font color="blue" size="5px">
-            TODAY'S DATE :
-            <strong>
-              <span id="time"></span>
-            </strong>
-          </font>
-        </i>
-        </marquee>
-    </header>
-
-    <div class="hero">
+    
+        <marquee  behavior="scroll" loop="-1" width="75%">
+          <i>
+            <font color="blue" size=5px>
+              TODAY'S DATE : 
+              <strong>
+                <span id="time"></span>
+              </strong>           
+            </font>
+          </i>
+        </marquee> 
+     </header>
+    
+     <div class="hero">
         <h1 class="title">Always Sunny in Manchester</h1>
-    </div>
+     </div>
 
-    <!-- Trigger/Open The Modal -->
-    <button id="myBtn">CLICK HERE</button>
-
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <!-- Modal content -->
-        <div class="modal-content">
-            <span class="close">&times;</span>
-            <p>INSERT TEXT HERE</p>
-        </div>
-    </div>
-
-<<<<<<< HEAD
-        </div>
             
         <section class = container> 
-            <div><a href="page2.html" id = link1>link to page 2</a></div> 
-            <div><a href="page2.html" id = link2>link to page 2</a></div> 
-            <div class="flex items-center justify-center h-screen bg-red-100">
-                <div class="bg-white rounded-2xl border shadow-x1 p-10 max-w-lg">
-                  <div class="flex flex-col items-center space-y-4">
-                    <h1 class="font-bold text-2xl text-gray-700 w-4/6 text-center">
-                      Location
-                    </h1>
-                    <p class="text-sm text-gray-500 text-center w-5/6">
-                      Hello, please enter the location you wish to search
-                    </p>
-                    <input
-                      type="text"
-                      placeholder="Email"
-                      class="border-2 rounded-lg w-full h-12 px-4"
-                    />
-                    <button
-                      class="bg-red-400 text-white rounded-md hover:bg-red-500 font-semibold px-4 py-3 w-full"
-                    >
-                      Subscribe
-                    </button>
+            <div class="jumbotron jumbotron-fluid bg-info text-light">
+               
+              </div>
+              <div class="container">
+                <div class="row justify-content-center">
+                  <div class="col-6">
+                    <h3>Pick where you want to go!!</h3>
+                    <form id="search">
+                      <div class="form-group row">
+                        <div class="col-sm-8">
+                          <input type="text" class="form-control" id="skill-name" />
+                        </div>
+                      </div>
+                      <button type="submit" value="Submit" class="btn btn-info">
+                        Hit search and off we goooooo!
+                      </button>
+                    </form>
                   </div>
+            
                 </div>
               </div>
-    
-            <div><a href="page2.html" id = link3>link to page 2</a></div> 
 
         </section>
 
     
-=======
-    <section class="container">
-        <div><a href="page2.html" id="link1">link to page 2</a></div>
-        <div><a href="page2.html" id="link2">link to page 2</a></div>
-        <div><a href="page2.html" id="link3">link to page 2</a></div>
-    </section>
->>>>>>> ec66f85914045101e25b24903c7e489a8f38548b
 
     <script rel="script" src="script.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-</body>
+  
+  </body>
 
-<footer></footer>
-
+  <footer>
+  
+  </footer>
 </html>
