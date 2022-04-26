@@ -33,7 +33,7 @@ box-shadow: 0 5px 35px var(--forgetmenot);
   padding: 10px;
   height: 100%; 
 }
-.gmap{
+#map{
     float:left;
     width: 48%;
     padding: 10px;
