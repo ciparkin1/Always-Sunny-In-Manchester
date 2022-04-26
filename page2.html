@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
@@ -14,58 +15,34 @@
           href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
           rel="stylesheet"
         />
-        <!doctype html>
-       
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="/dist/output.css" rel="stylesheet">
-        </head>
-        <body>
-        <h1 class="text-3xl font-bold underline">
-            Hello world!
-        </h1>
-        
         <link rel="stylesheet" href="style.css" />
-        <title>Always Sunny in Manchester</title>
-            
+        <title>Sunny Side Up!</title>      
     </head>
       
-    <!-- main logo / nav -->
-    
-<body>
-        <header>
-            <nav>
-                <ul class="pages" style="list-style-type: none">
-                    <li><a href="index.html">Back to main page</a></li>
-                </ul>
-            </nav>
-           <marquee  behavior="scroll" loop="-1" width="75%">
-             <i>
-               <font color="blue" size=5px>
-               "Manchester has everything except a beach" Ian Brown
-                 <!-- <strong>
-                   <span id="time"></span>
-                 </strong>-->
-               </font>
-             </i>
-           </marquee> 
-        </header>
+    <body>
+       
+        <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay">×</span>
+            <div class="overlay-content">
+              <form action="/action_page.php">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit"><i class="fa fa-search"></i></button>
+              </form>
+            </div>
+          </div>
+          <button class="openBtn" onclick="openSearch()">Open Search Box</button>
 
-
-          ÷
-    <section class="row"> 
-        <div class="column" style="background-color:#aaa;">
-          <h2>Reddit</h2>
-          <p>Some text..</p>
-        </div>
-        <div class="column" style="background-color:#bbb;">
-          <h2>UK / world? Map</h2>
-          <p>Some text..</p>
-      </div>
-    </section>  
-
-      <script rel="script" src="script.js"></script>
- </body>
+        <section class="row"> 
+            <div class="reddit" style="background-color:#aaa;">
+            
+            </div>
+            <div class="gmap" style="background-color:#bbb;">
+          
+            </div>    
+        </section>  
+        <script rel="script" src="script.js"></script>
+    </body>
 
 <footer>
       
