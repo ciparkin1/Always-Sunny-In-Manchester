@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-​
 
 <head>
     <meta charset="UTF-8" />
@@ -8,12 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 </head>
-​
 
 <body>
     <style>
         #map {
-            height: 100%;
+            height: 90%;
         }
         /*
         * Optional: Makes the sample page fill the window.
@@ -26,86 +24,13 @@
             padding: 0;
         }
     </style>
-    ​
+
     <div id="map"></div>
 
-    <form id="form">
-        <input type="search" id="mapsearch" name="q" placeholder="Search..." />
-        <button>Search</button>
-    </form>
-    <script>
-        // Initialize the map.
-        let map;
-        let geocoder;
-        let infowindow;​
-        function initMap() {
-            map = new google.maps.Map(document.getElementById("map"), {
-                zoom: 8,
-                center: {
-                    lat: 40.72,
-                    lng: -73.96
-                },
-            });
-            geocoder = new google.maps.Geocoder();
-            infowindow = new google.maps.InfoWindow();
-        }​
-
-
-        function getPlaceData() {
-            // create a reference the search text
-            ​
-            // get the search text
-            // pass the search text to the lookup location
-            var input = getElementById("mapsearch");
-            t.input.textcontent.addEventListener("onclick");
-            prompt(lookupLocation)
-
-
-        }
-
-        function lookupLocation(location) {
-            var requestOptions = {
-                method: 'GET',
-                mode: 'no-cors'
-            }​
-            fetch(`https://cors-anywhere.herokuapp.com/https://maps.googleapis.com/maps/api/place/autocomplete/json?input=${location}&types=establishment&location=37.76999%2C-122.44696&radius=500&key=AIzaSyCr-Av0kS8QAYgzV2dOHJXomDn8rxTcsRA`)
-                .then(response => response.json())
-                .then(result => getPlaceId(result))
-        };​
-        function getPlaceId(result) {
-            var placeId = result.predictions[0].place_id;
-            geocodePlaceId(placeId);
-        }​
-        function geocodePlaceId(placeId) {
-
-            geocoder
-                .geocode({
-                    placeId: placeId
-                })
-                .then(({
-                    results
-                }) => {
-                    if (results[0]) {
-                        map.setZoom(11);
-                        map.setCenter(results[0].geometry.location);​
-                        const marker = new google.maps.Marker({
-                            map,
-                            position: results[0].geometry.location,
-                        });​
-                        infowindow.setContent(results[0].formatted_address);
-                        infowindow.open(map, marker);
-                    } else {
-                        window.alert("No results found");
-                    }
-                })
-                .catch((e) => window.alert("Geocoder failed due to: " + e));
-        }
-
-        lookupLocation('manchester')
-        window.initMap = initMap;
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCr-Av0kS8QAYgzV2dOHJXomDn8rxTcsRA&callback=initMap&v=weekly" defer></script>
+    <input type="text" id="searchText" name="q" placeholder="Search..." />
+    <button id="searchButton">Search</button>
+    <script src="https:/ / maps.googleapis.com / maps / api / js ? key = AIzaSyCr - Av0kS8QAYgzV2dOHJXomDn8rxTcsRA & callback = initMap & v = weekly" defer></script>
+    <script src="map.js"></script>
 </body>
-​
 
 </html>
